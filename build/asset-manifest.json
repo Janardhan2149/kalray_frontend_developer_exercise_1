@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b1ae8dd809bc53209e61.css",
+    "main.js": "/static/js/main.b1ae8dd809bc53209e61.js",
+    "static/js/453.chunk.js": "/static/js/453.b1ae8dd809bc53209e61.chunk.js",
+    "static/media/tool-02.svg": "/static/media/tool-02.4aaac6590e16776c5888a03778d6e544.svg",
+    "static/media/home-line.svg": "/static/media/home-line.899720705654658e53a46f04c19cd4c4.svg",
+    "static/media/eye-off.svg": "/static/media/eye-off.e99b2286fdc371ba4711bf1d93e4bd96.svg",
+    "index.html": "/index.html",
+    "static/media/file-search-02.svg": "/static/media/file-search-02.63388f84127a74aa0f13088867a63741.svg",
+    "static/media/bar-toggler-outer-icon@2x.svg": "/static/media/bar-toggler-outer-icon@2x.f631b573beed61ff06220d3e66cefd0f.svg",
+    "static/media/search-reflection.svg": "/static/media/search-reflection.6d0e050e0759bf5602a08be6b05c8108.svg",
+    "static/media/check-circle.svg": "/static/media/check-circle.ab7efd2718c4e98af2253381078e3169.svg",
+    "static/media/x-circle.svg": "/static/media/x-circle.4c112e76a1e8540b325893958b294d97.svg",
+    "static/media/chevron-right@2x.svg": "/static/media/chevron-right@2x.7c0aef4c197bba840b4971ec1deb8056.svg",
+    "main.css.map": "/static/css/main.b1ae8dd809bc53209e61.css.map",
+    "main.js.map": "/static/js/main.b1ae8dd809bc53209e61.js.map",
+    "453.chunk.js.map": "/static/js/453.b1ae8dd809bc53209e61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1ae8dd809bc53209e61.css",
+    "static/js/main.b1ae8dd809bc53209e61.js"
+  ]
+}

@@ -1,9 +1,12 @@
-import { useEffect, useContext } from 'react';
+import { useEffect, useState, useContext } from 'react';
 
 import { AppContext } from '../../context/AppContext';
 import TopBar from '../topbar/TopBar';
+import appService from '../../services/appService'; 
 
 import './Home.sass';
+import TaskTable from '../common/taskTable/TaskTable';
+import { Task } from '../common/taskTable/Task';
 
 /*
     Setup:
@@ -45,8 +48,10 @@ import './Home.sass';
         3- Typescript usage: Define TypeScript interfaces whenever necessary. All functions and arguments should be typed.
 */
 
+
 const Home: React.FC = () => {
     const { leftBarShown, onToggleLeftBarShown } = useContext(AppContext);
+    const [tasks, setTasks] = useState<Task[]>([]);
 
     useEffect(() => {
         document.title = 'Tasks to do';
@@ -55,7 +60,16 @@ const Home: React.FC = () => {
             onToggleLeftBarShown(true);
         }
         // eslint-disable-next-line
-    }, []);
+
+        // Fetch tasks from the server
+        appService.getToDoList().then(response => {
+            // Set the tasks state with the fetched data
+            setTasks(response.data);
+        }).catch(error => {
+            console.error("Failed to fetch tasks:", error);
+        });
+
+    }, [leftBarShown, onToggleLeftBarShown]);
 
     return (
         <div>
@@ -63,7 +77,7 @@ const Home: React.FC = () => {
 
             <div className="home">
                 <div className="home-content">
-                    - Content should be here -
+                    <TaskTable tasks={tasks} setTasks={setTasks} />
                 </div>
             </div>
         </div>
